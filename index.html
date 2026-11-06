@@ -1,17 +1,9 @@
 <!doctype html>
-<!--
-  DIGITAL HUMANITIES EXHIBITION TEMPLATE
-  Quick start:
-  1. Replace every item marked [EDIT].
-  2. Put each piece of work inside an "Assignment" block.
-  3. Save this file as index.html, upload it to a GitHub repository, and enable GitHub Pages.
-  Full publishing steps are in README.md. No software or build step is needed.
--->
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A student digital humanities portfolio exhibition.">
+    <meta name="description" content="A portfolio of digital humanities projects by Suman Kumar at IIT (ISM) Dhanbad.">
     <title>Suman Kumar | Digital Humanities Portfolio</title>
     <style>
       :root {
@@ -121,8 +113,6 @@
       .section-number { color: var(--gold); font-family: Arial, Helvetica, sans-serif; font-size: 0.85rem; font-weight: 700; }
       .content-section p, .content-section li { max-width: 72ch; }
 
-      /* EDIT HERE: Replace this example box with your essay, timeline, image gallery, map,
-         data visualisation, embedded media, or another form of project work. */
       .edit-placeholder {
         margin-top: 1.5rem;
         padding: clamp(1.25rem, 4vw, 2.25rem);
@@ -265,11 +255,10 @@
       <aside class="student-card" aria-labelledby="student-details-heading">
         <h2 id="student-details-heading">Student details</h2>
 
-        <!-- Keep these six items in this order. Replace only the value for Name. -->
         <dl class="metadata">
           <div>
             <dt>Name</dt>
-            <dd> Suman kumar </dd>
+            <dd>Suman Kumar</dd>
           </div>
           <div>
             <dt>Assignment</dt>
@@ -292,32 +281,26 @@
             <dd>IIT (ISM) Dhanbad</dd>
           </div>
         </dl>
-        <p class="student-note">Replace text in square brackets before publishing.</p>
+        <p class="student-note">An interdisciplinary portfolio of language, literature, data, and digital methods developed at IIT (ISM) Dhanbad.</p>
       </aside>
 
       <main id="main-content">
-        <!-- EDIT HERE: This page collects several assignments by one student. -->
         <section class="hero" aria-labelledby="portfolio-title">
           <p class="label project-kicker">Student portfolio</p>
-          <h1 id="portfolio-title"> Suman kumar &rsquo;s Digital Humanities Portfolio</h1>
-          <p class="abstract"><strong>Portfolio introduction.</strong> [EDIT: In 2&ndash;4 sentences, introduce the interests, questions, materials, or methods that connect your assignments. Readers can explore each exhibition below.]</p>
+          <h1 id="portfolio-title">Suman Kumar&rsquo;s Digital Humanities Portfolio</h1>
+          <p class="abstract"><strong>Portfolio introduction.</strong> This portfolio brings together four projects that explore how digital methods can support the study of language, literature, and cultural knowledge. It combines text extraction, natural language processing, LLM-assisted literary analysis, and the organisation of Hindi language resources. Across these projects, I focus on making textual material searchable and interpretable while recognising the importance of human review, context, and transparent research methods.</p>
 
           <nav class="contents-nav" aria-label="Assignments on this page">
             <p class="label">On this page</p>
             <ul>
-              <!-- This list updates itself when the page opens. It still works if JavaScript is unavailable. -->
               <li><a href="#assignment-1">Assignment 01</a></li>
               <li><a href="#assignment-2">Assignment 02</a></li>
               <li><a href="#assignment-3">Assignment 03</a></li>
+              <li><a href="#assignment-4">Assignment 04</a></li>
             </ul>
           </nav>
         </section>
 
-        <!--
-          ASSIGNMENTS: Each block below is one exhibition. Replace its title, abstract, and
-          visible work. To add another, copy an entire <article class="assignment"> block.
-          The page will automatically number it and add it to the navigation.
-        -->
         <section class="content-section" aria-labelledby="assignments-heading">
           <div class="section-heading">
             <span class="section-number" aria-hidden="true">01</span>
@@ -328,82 +311,103 @@
             <article class="assignment" id="assignment-1" aria-labelledby="assignment-1-title">
               <header>
                 <span class="assignment-index">Assignment 01</span>
-                <h3 id="assignment-1-title">[EDIT: Title of your first assignment]</h3>
+                <h3 id="assignment-1-title">Extraction of Indian Cultural Elements Using RAG: Flora and Fauna</h3>
               </header>
-              <p class="assignment-abstract"><strong>Abstract.</strong> [EDIT: Give a short description of this assignment: the question, material, method, and main insight.]</p>
-              <!-- EDIT: Replace this with the GitHub repository URL for this assignment. -->
-              <p class="assignment-repository"><a class="repository-link" href="https://github.com/your-username/your-assignment-1-repository" target="_blank" rel="noopener noreferrer">View this project&rsquo;s GitHub repository</a></p>
+              <p class="assignment-abstract"><strong>Abstract.</strong> This project explores the identification and organisation of flora and fauna references across five literary and reference texts. The catalogue contains 78 records—19 flora and 59 fauna—and preserves categories, common names, textual quotations, source locations, status labels, and remarks. It demonstrates how structured extraction can support textual exploration while showing why ambiguous entries still need human and taxonomic review.</p>
+              <p class="assignment-repository"><a class="repository-link" href="https://github.com/sumansinoy/flora-fauna" target="_blank" rel="noopener noreferrer">GitHub repository</a> <a class="repository-link" href="https://sumansinoy.github.io/flora-fauna/" target="_blank" rel="noopener noreferrer">Assignment webpage</a></p>
               <div class="assignment-body">
-                <p class="edit-callout">Visible assignment work</p>
-                <p>[EDIT: Place the actual first assignment here. Add paragraphs, images, a timeline, linked media, data, maps, or your own HTML. This space should show the work, not only describe it.]</p>
+                <p class="edit-callout">Project overview</p>
+                <p><strong>Research focus.</strong> What flora and fauna entities appear across the selected texts, how can they be grouped into consistent categories, and what kinds of ambiguity arise during extraction?</p>
+                <p><strong>Approach.</strong> The records are organised into five flora categories—Trees, Plants, Flowers, Herbs, and Crops—and five fauna categories—Mammals, Birds, Reptiles, Fish, and Insects. Each entry retains evidence and metadata so that readers can inspect the source quotation and review its classification.</p>
+                <p><strong>What the dataset shows.</strong> Fauna makes up 59 of the 78 records, while flora accounts for 19. The dataset marks 62 records as “Verified” and 16 as “Ambiguous”. The ambiguous entries are useful for identifying issues such as habitat terms being grouped with plants or uncertain organisms being placed in the wrong category.</p>
+                <p><strong>Research note.</strong> These figures describe the supplied extraction dataset, not the actual distribution of biodiversity in India or the complete contents of the source books. The project webpage presents and analyses pre-structured extraction results; the underlying RAG pipeline and its technical configuration are not included in the supplied project file.</p>
               </div>
             </article>
 
             <article class="assignment" id="assignment-2" aria-labelledby="assignment-2-title">
               <header>
                 <span class="assignment-index">Assignment 02</span>
-                <h3 id="assignment-2-title">[EDIT: Title of your second assignment]</h3>
+                <h3 id="assignment-2-title">Research Title Keyword Extractor</h3>
               </header>
-              <p class="assignment-abstract"><strong>Abstract.</strong> [EDIT: Give a short description of this assignment: the question, material, method, and main insight.]</p>
-              <!-- EDIT: Replace this with the GitHub repository URL for this assignment. -->
-              <p class="assignment-repository"><a class="repository-link" href="https://github.com/your-username/your-assignment-2-repository" target="_blank" rel="noopener noreferrer">View this project&rsquo;s GitHub repository</a></p>
+              <p class="assignment-abstract"><strong>Abstract.</strong> This project presents a research-support skill that identifies meaningful keywords and multi-word phrases from academic paper titles. It organises the extracted terms into main keywords, supporting keywords, research concepts, and population or context keywords where applicable. The aim is to help readers identify a study’s central concepts while preserving the original meaning of its title.</p>
+              <p class="assignment-repository"><a class="repository-link" href="https://github.com/sumansinoy/Skill" target="_blank" rel="noopener noreferrer">GitHub repository</a> <a class="repository-link" href="https://sumansinoy.github.io/Skill/" target="_blank" rel="noopener noreferrer">Assignment webpage</a></p>
               <div class="assignment-body">
-                <p class="edit-callout">Visible assignment work</p>
-                <p>[EDIT: Place the actual second assignment here. Delete this entire block if you do not need it, or copy a block to add more assignments.]</p>
+                <p class="edit-callout">Project overview</p>
+                <p><strong>Research question.</strong> How can an LLM-based skill identify, organise, and explain meaningful keywords from academic research titles without changing their original meaning?</p>
+                <p><strong>Workflow.</strong> The process receives a research title, preprocesses the text, identifies individual terms and meaningful phrases, and classifies them by their research role. The command interface supports extraction, phrase identification, simple or academic presentation, classification, counting, and explanation.</p>
+                <p><strong>Expected output.</strong> Users can examine the central topic, supporting subject-specific terms, broader research concepts, and any population or context stated in the title. The webpage also provides an interactive example to demonstrate the workflow.</p>
+                <p><strong>Limitation.</strong> The analysis is based on the title supplied and cannot represent the full argument or findings of a paper without access to the paper itself. The webpage demonstration uses basic browser-side text rules; it is not a live connection to an LLM or a complete implementation of the skill.</p>
               </div>
             </article>
 
             <article class="assignment" id="assignment-3" aria-labelledby="assignment-3-title">
               <header>
                 <span class="assignment-index">Assignment 03</span>
-                <h3 id="assignment-3-title">[EDIT: Title of your third assignment]</h3>
+                <h3 id="assignment-3-title">Computational Literary Analysis: Time, Memory, and Human Experience</h3>
               </header>
-              <p class="assignment-abstract"><strong>Abstract.</strong> [EDIT: Give a short description of this assignment: the question, material, method, and main insight.]</p>
-              <!-- EDIT: Replace this with the GitHub repository URL for this assignment. -->
-              <p class="assignment-repository"><a class="repository-link" href="https://github.com/your-username/your-assignment-3-repository" target="_blank" rel="noopener noreferrer">View this project&rsquo;s GitHub repository</a></p>
+              <p class="assignment-abstract"><strong>Abstract.</strong> This project combines LLM-assisted phrase extraction with reader-oriented literary interpretation to examine how a narrative develops themes of time, memory, emotional experience, loss, and the value of human life. The text is organised into 17 segments and four narrative stages. Five interactive visualisations help trace thematic phrases and compare how the research dimensions develop across the narrative.</p>
+              <p class="assignment-repository"><a class="repository-link" href="https://github.com/sumansinoy/synthetic-reading" target="_blank" rel="noopener noreferrer">GitHub repository</a> <a class="repository-link" href="https://sumansinoy.github.io/synthetic-reading/" target="_blank" rel="noopener noreferrer">Assignment webpage</a></p>
               <div class="assignment-body">
-                <p class="edit-callout">Visible assignment work</p>
-                <p>[EDIT: Place the actual third assignment here. Duplicate this block if you have more assignments to exhibit.]</p>
+                <p class="edit-callout">Project overview</p>
+                <p><strong>Research question.</strong> How does the story use the symbolism of time, memory, and emotional experiences to explore the meaning and value of human life?</p>
+                <p><strong>Analytical dimensions.</strong> The reading follows four connected themes: time and human existence; memory and emotional experience; loss and emotional duality; and meaning and value of life. The narrative is divided into stages based on changes in scene rather than equal-length sections.</p>
+                <p><strong>Visual analysis.</strong> The project includes a thematic heatmap, a sub-dimension bubble chart, a comparison of themes across the four narrative stages, a line chart showing thematic development, and a chart of frequently occurring thematic phrases. Frequencies are also compared per 100 words to account for differences in segment length.</p>
+                <p><strong>Method note.</strong> Phrases were extracted with Claude from a researcher-written prompt, checked word for word against the text, and matched as whole words using the longest phrase first. Overlapping stretches of text were not counted more than once. The charts support interpretation; they do not replace close reading or establish literary meaning on their own.</p>
+              </div>
+            </article>
+
+            <article class="assignment" id="assignment-4" aria-labelledby="assignment-4-title">
+              <header>
+                <span class="assignment-index">Assignment 04</span>
+                <h3 id="assignment-4-title">Hindi Stop Words for Natural Language Processing</h3>
+              </header>
+              <p class="assignment-abstract"><strong>Abstract.</strong> This project organises 100 frequently used Hindi words written in the Roman script into seven grammatical categories to support basic text preprocessing in Natural Language Processing. It presents the words as a reusable Python stop-word resource and explains how common grammatical forms can be filtered so that text analysis can focus more closely on content-bearing terms.</p>
+              <p class="assignment-repository"><a class="repository-link" href="https://github.com/sumansinoy/hindistopwords" target="_blank" rel="noopener noreferrer">GitHub repository</a> <a class="repository-link" href="https://sumansinoy.github.io/hindistopwords/" target="_blank" rel="noopener noreferrer">Assignment webpage</a></p>
+              <div class="assignment-body">
+                <p class="edit-callout">Project overview</p>
+                <p><strong>Objectives.</strong> The project collects common Hindi words, groups them into grammatical categories, provides a Python file named <code>hindi_stopwords.py</code>, and presents the distribution through an explanatory webpage with interactive charts and reading modes.</p>
+                <p><strong>Categories.</strong> The seven groups cover pronouns and possessives, pointing words, question words, link words and case markers, helper and action verbs, describing and time words, and connectors.</p>
+                <p><strong>Key observation.</strong> The project highlights the frequency of pronoun forms and helper verbs in the collected list. These forms vary according to factors such as person, gender, and respect, which makes Hindi stop-word preparation more complex than simply removing a single base form.</p>
+                <p><strong>Limitations.</strong> The current list uses Roman-script spellings, so variants such as “nahi” and “nahin” may occur. Removing negation words such as “nahin” can also change a sentence’s meaning, particularly in sentiment analysis. Further work could add Devanagari support and extend the resource to other Indian languages.</p>
               </div>
             </article>
           </div>
         </section>
 
-        <!-- OPTIONAL: Keep, adapt, or delete this section. -->
         <section class="content-section" aria-labelledby="reflection-heading">
           <div class="section-heading">
             <span class="section-number" aria-hidden="true">02</span>
             <h2 id="reflection-heading">Portfolio reflection</h2>
           </div>
-          <p>[EDIT: Reflect on the connections among your assignments. What did you learn about digital humanities methods, evidence, interpretation, or public presentation across the portfolio?]</p>
+          <p>Across these projects, I have explored language and cultural material both as subjects for interpretation and as information that can be organised computationally. The work moves from identifying entities in literary and reference texts, to extracting research keywords, studying narrative themes with LLM-assisted methods, and preparing a small Hindi language resource for NLP.</p>
+          <p>A common lesson across the portfolio is that digital tools can make texts easier to search, compare, and present, but their outputs still require human judgement. Ambiguous classifications, the limits of title-only analysis, model-assisted phrase extraction, and variation in Roman-script Hindi all show why context and validation remain important. I see Digital Humanities as a field in which computational methods and critical interpretation work together rather than replace one another.</p>
           <details>
-            <summary>Optional: methods note</summary>
-            <p>[EDIT: Briefly document your workflow, tools, categories, decisions, or ethical considerations. Delete this box if it is not useful.]</p>
+            <summary>Methods note</summary>
+            <p>The projects use different workflows according to their research questions: structured extraction and metadata review for flora and fauna; preprocessing, tokenisation, and keyword classification for research titles; LLM-assisted phrase identification followed by manual checking for literary analysis; and category-based compilation for Hindi stop words. The webpages distinguish the purpose of each method from its limitations. In particular, the flora/fauna page organises supplied extraction results, the keyword-extractor demo uses simple browser-side rules, and the literary visualisations are descriptive aids for interpretation.</p>
           </details>
         </section>
 
-        <!-- OPTIONAL: Cite all sources, images, datasets, and tools you used across the portfolio. -->
         <section class="content-section" aria-labelledby="sources-heading">
           <div class="section-heading">
             <span class="section-number" aria-hidden="true">03</span>
             <h2 id="sources-heading">Sources and acknowledgements</h2>
           </div>
-          <ul class="citation-list">
-            <li>[EDIT: Author. <em>Title.</em> Publisher, year. URL if applicable.]</li>
-            <li>[EDIT: Image, archive, dataset, or tool credit.]</li>
-          </ul>
+          <p>The following project webpages and public repositories contain the detailed project material, code, data descriptions, visualisations, and methodological notes.</p>
+          <ol class="citation-list">
+            <li>Suman Kumar. <em>Extraction of Indian Cultural Elements Using RAG: Flora and Fauna.</em> <a href="https://sumansinoy.github.io/flora-fauna/" target="_blank" rel="noopener noreferrer">Project webpage</a> · <a href="https://github.com/sumansinoy/flora-fauna" target="_blank" rel="noopener noreferrer">GitHub repository</a>.</li>
+            <li>Suman Kumar. <em>Research Title Keyword Extractor.</em> <a href="https://sumansinoy.github.io/Skill/" target="_blank" rel="noopener noreferrer">Project webpage</a> · <a href="https://github.com/sumansinoy/Skill" target="_blank" rel="noopener noreferrer">GitHub repository</a>.</li>
+            <li>Suman Kumar. <em>Computational Literary Analysis: Time, Memory, and Human Experience.</em> <a href="https://sumansinoy.github.io/synthetic-reading/" target="_blank" rel="noopener noreferrer">Project webpage</a> · <a href="https://github.com/sumansinoy/synthetic-reading" target="_blank" rel="noopener noreferrer">GitHub repository</a>.</li>
+            <li>Suman Kumar. <em>Hindi Stop Words for Natural Language Processing.</em> <a href="https://sumansinoy.github.io/hindistopwords/" target="_blank" rel="noopener noreferrer">Project webpage</a> · <a href="https://github.com/sumansinoy/hindistopwords" target="_blank" rel="noopener noreferrer">GitHub repository</a>.</li>
+          </ol>
+          <p>Project descriptions and methodological notes are based on the linked webpages and repositories. Tools and other project-specific materials are acknowledged on the relevant assignment pages.</p>
         </section>
       </main>
     </div>
 
     <footer class="site-footer">
-      <p>Digital Humanities Student Exhibition &middot; Department of HSS &middot; IIT (ISM) Dhanbad</p>
+      <p>Suman Kumar &middot; Digital Humanities Portfolio &middot; Department of HSS &middot; IIT (ISM) Dhanbad &middot; Session 2026&ndash;27</p>
     </footer>
     <script>
-      /*
-        Keeps the assignment labels and page navigation in sync. Students only need to copy,
-        delete, or move an .assignment block; this script does the numbering on page load.
-      */
       (() => {
         const assignments = [...document.querySelectorAll('.assignment')];
         const contentsNav = document.querySelector('.contents-nav');
